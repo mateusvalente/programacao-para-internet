@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7fafc; font-family: Arial, sans-serif; }
+.page { max-width: 900px; margin: 0 auto; padding: 24px; }
+.card { background: #fff; border: 1px solid #ddd; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+input, textarea, button { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: 1px solid #ccc; }
+textarea { min-height: 90px; resize: vertical; }
+button { cursor: pointer; border: none; background: #2b6cb0; color: #fff; font-weight: bold; }
+button.secondary { background: #718096; }
+button.danger { background: #c53030; }
+.actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.list { display: grid; gap: 16px; }
+.message { background: #ebf8ff; border: 1px solid #90cdf4; padding: 12px; border-radius: 8px; margin-bottom: 16px; }

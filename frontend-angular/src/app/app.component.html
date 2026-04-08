@@ -1,0 +1,29 @@
+<div class="page">
+  <h1>CRUD de Produtos - Angular</h1>
+
+  <div class="card">
+    <input [(ngModel)]="form.name" type="text" placeholder="Nome do produto" />
+    <input [(ngModel)]="form.price" type="number" step="0.01" placeholder="Preço" />
+    <textarea [(ngModel)]="form.description" placeholder="Descrição"></textarea>
+
+    <div class="actions">
+      <button (click)="saveProduct()">{{ form.id ? 'Atualizar' : 'Cadastrar' }}</button>
+      <button class="secondary" *ngIf="form.id" (click)="resetForm()">Cancelar</button>
+    </div>
+  </div>
+
+  <p *ngIf="message" class="message">{{ message }}</p>
+
+  <div class="list">
+    <div class="card product" *ngFor="let product of products">
+      <h3>{{ product.name }}</h3>
+      <p><strong>Preço:</strong> R$ {{ product.price | number:'1.2-2' }}</p>
+      <p>{{ product.description || 'Sem descrição' }}</p>
+
+      <div class="actions">
+        <button (click)="editProduct(product)">Editar</button>
+        <button class="danger" (click)="deleteProduct(product.id)">Excluir</button>
+      </div>
+    </div>
+  </div>
+</div>
