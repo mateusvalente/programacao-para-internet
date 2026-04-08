@@ -40,7 +40,7 @@ docker compose up --build
 - **phpMyAdmin:** `http://localhost:8080`
 - **Vue:** `http://localhost:5173`
 - **Angular:** `http://localhost:4200`
-- **Next.js:** `http://localhost:3001`
+- **Next.js:** `http://localhost:3001` 
 
 ## Credenciais do banco
 
